@@ -121,7 +121,7 @@ async def handle_message(message: cl.Message):
                 indent=2,
             )
 
-        # ✅ Show saved file location inside Chainlit
+        #  Show saved file location inside Chainlit
         await cl.Message(
             content=f"💾 **Files saved in:** `outputs/{file.name.split('.')[0]}_*`\n\nYou can check the folder for:\n- Transcript (.txt)\n- Summary (.txt)\n- Metadata (.json)"
         ).send()
